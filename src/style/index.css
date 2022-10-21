@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "display";
+  src: url("../assets/fonts/KeeponTruckin.ttf");
+}
+
+@layer components {
+  .main-container {
+    @apply flex justify-center items-center bg-gradient-to-b from-light-blue to-dark-purple;
+  }
+
+  .content-wrapper {
+    @apply min-h-screen max-w-lg w-full overflow-hidden select-none relative;
+  }
+
+  .star-wrapper {
+    @apply absolute h-full w-full;
+  }
+
+  .star {
+    @apply absolute object-contain w-10 h-10;
+  }
+
+  .title-wrapper {
+    @apply flex flex-col justify-center items-center min-h-screen z-50;
+  }
+
+  .title {
+    @apply font-display text-white text-4xl;
+    -webkit-text-stroke: 1px #FF9C27;
+  }
+
+  .subtitle {
+    @apply pt-1 max-w-[270px] text-sm text-[#FFE600] font-medium font-graph 
+  }
+
+  .image-wrapper {
+    @apply flex flex-col mt-20 justify-end items-center min-h-screen z-50;
+  }
+
+  .happy-birthday {
+    @apply object-contain w-[90%];
+  }
+}
